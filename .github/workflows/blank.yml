@@ -35,4 +35,5 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy docker://docker.io/library/node:18-buster docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18-buster
+        skopeo copy docker://docker.io/library/node:18 docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18
  
