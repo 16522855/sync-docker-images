@@ -34,6 +34,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
+        skopeo copy docker://ghcr.io/toeverything/affine-self-hosted:latest docker://registry.cn-hangzhou.aliyuncs.com/gshub/affine-self-hosted:latest
         skopeo copy docker://docker.io/library/node:18-buster docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18-buster
         skopeo copy docker://docker.io/library/node:18-alpine docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18-alpine        
         skopeo copy docker://docker.io/library/node:18 docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18
