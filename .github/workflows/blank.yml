@@ -34,7 +34,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/arm64v8/mongo:4.4.18 docker://registry.cn-hangzhou.aliyuncs.com/gshub/arm64v8_mongo:4.4.18
         skopeo copy docker://docker.io/cloudflare/cloudflared docker://registry.cn-hangzhou.aliyuncs.com/gshub/cloudflared
         skopeo copy docker://docker.io/library/node:18-bullseye docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18-bullseye
         skopeo copy docker://docker.io/library/node:18-buster docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18-buster
