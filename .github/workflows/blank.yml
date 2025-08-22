@@ -39,5 +39,6 @@ jobs:
         skopeo copy docker://docker.io/library/node:18-buster docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18-buster
         skopeo copy docker://docker.io/library/node:18-alpine docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18-alpine        
         skopeo copy docker://docker.io/library/node:18 docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18
+        skopeo copy docker://docker.io/library/node:22 docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:22
         skopeo copy docker://docker.io/library/docker:19.03.12 docker://registry.cn-hangzhou.aliyuncs.com/gshub/docker:19.03.12
  
