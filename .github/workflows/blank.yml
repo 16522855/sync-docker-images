@@ -42,4 +42,3 @@ jobs:
         skopeo copy docker://docker.io/library/node:22 docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:22
         skopeo copy docker://docker.io/library/docker:19.03.12 docker://registry.cn-hangzhou.aliyuncs.com/gshub/docker:19.03.12
         skopeo copy docker://ghcr.io/dockur/windows:5.03 docker://registry.cn-hangzhou.aliyuncs.com/gshub/windows:5.03
-        skopeo copy docker://ghcr.io/tokio-rs/console:latest docker://registry.cn-hangzhou.aliyuncs.com/gshub/tokio-console:latest
