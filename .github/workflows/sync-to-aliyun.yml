@@ -26,8 +26,8 @@ jobs:
     - name: Use Skopeo Tools Sync Image to aliyun
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://ghcr.io/wsc-studio/rust-red-main-base:full docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-main-base:full
-        skopeo copy docker://ghcr.io/wsc-studio/rust-red-main-base:no-lo docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-main-base:no-lo
-        skopeo copy docker://ghcr.io/wsc-studio/rust-red-main-base:no-ffmpeg docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-main-base:no-ffmpeg
-        skopeo copy docker://ghcr.io/wsc-studio/rust-red-main-base:lite docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-main-base:lite
+        skopeo copy docker://ghcr.io/wsc-studio/rust-red-runtime-base:full docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-runtime-base:full
+        skopeo copy docker://ghcr.io/wsc-studio/rust-red-runtime-base:no-lo docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-runtime-base:no-lo
+        skopeo copy docker://ghcr.io/wsc-studio/rust-red-runtime-base:no-ffmpeg docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-runtime-base:no-ffmpeg
+        skopeo copy docker://ghcr.io/wsc-studio/rust-red-runtime-base:lite docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-runtime-base:lite
         
