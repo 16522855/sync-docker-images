@@ -26,5 +26,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to aliyun
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://ghcr.io/wsc-studio/rust-red-acms docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-acms:full
+        skopeo copy docker://ghcr.io/wsc-studio/rust-red-acms docker://registry.cn-hangzhou.aliyuncs.com/gshub/rust-red-acms
         
