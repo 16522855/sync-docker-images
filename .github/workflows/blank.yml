@@ -34,6 +34,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
+        skopeo copy docker://docker.io/library/nginx:1.28 docker://registry.cn-hangzhou.aliyuncs.com/gshub/nginx:1.28
         skopeo copy docker://docker.io/library/postgres:18 docker://registry.cn-hangzhou.aliyuncs.com/gshub/postgres:18
         skopeo copy docker://docker.io/cloudflare/cloudflared docker://registry.cn-hangzhou.aliyuncs.com/gshub/cloudflared
         skopeo copy docker://docker.io/library/node:18-bullseye docker://registry.cn-hangzhou.aliyuncs.com/gshub/node:18-bullseye
