@@ -34,6 +34,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
+        skopeo copy docker://docker.io/sjqzhang/go-fastdfs:v1.4.5 docker://registry.cn-hangzhou.aliyuncs.com/gshub/go-fastdfs:v1.4.5
         skopeo copy docker://docker.io/library/centos:7 docker://registry.cn-hangzhou.aliyuncs.com/gshub/centos:7
         skopeo copy docker://docker.io/library/redis:8 docker://registry.cn-hangzhou.aliyuncs.com/gshub/redis:8        
         skopeo copy docker://docker.io/library/tomcat:8.5.100-jdk8-temurin-jammy docker://registry.cn-hangzhou.aliyuncs.com/gshub/tomcat:8.5.100-jdk8-temurin-jammy
