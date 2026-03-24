@@ -34,6 +34,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
+        skopeo copy docker://docker.io/onlyoffice/documentserver:7.3.3.50 docker://registry.cn-hangzhou.aliyuncs.com/gshub/onlyoffice-documentserver:7.3.3.50
         skopeo copy docker://docker.io/ygqygq2/fastdfs-nginx:V6.07 docker://registry.cn-hangzhou.aliyuncs.com/gshub/fastdfs-nginx:V6.07
         skopeo copy docker://docker.io/sjqzhang/go-fastdfs:v1.4.5 docker://registry.cn-hangzhou.aliyuncs.com/gshub/go-fastdfs:v1.4.5
         skopeo copy docker://docker.io/library/centos:7 docker://registry.cn-hangzhou.aliyuncs.com/gshub/centos:7
