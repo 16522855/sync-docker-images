@@ -4,11 +4,6 @@ name: Sync-mysql
 run-name: ${{ github.actor }} is Sync mysql to aliyun
 # 怎样触发工作流
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
