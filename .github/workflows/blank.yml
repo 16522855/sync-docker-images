@@ -4,12 +4,6 @@ name: Sync-Images-to-DockerHub-Example
 run-name: ${{ github.actor }} is Sync Images to DockerHub.
 # 怎样触发工作流
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 # 工作流程任务（通常含有一个或多个步骤）
