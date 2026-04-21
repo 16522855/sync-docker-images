@@ -50,5 +50,4 @@ jobs:
         TARGET="docker://registry.cn-hangzhou.aliyuncs.com/gshub/${REPO_NAME}:${IMAGE_TAG}"
         
         echo "Syncing image from ${SOURCE} to ${TARGET}"
-        # 添加 --format v2s2 参数，解决部分 Registry (如阿里云 ACR 个人版) 不支持 OCI 格式或 SBOM 导致的 "blob type invalid" 错误
-        skopeo copy --all --format v2s2 "${SOURCE}" "${TARGET}"
+        skopeo copy "${SOURCE}" "${TARGET}"
