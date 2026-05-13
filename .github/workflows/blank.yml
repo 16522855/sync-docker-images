@@ -28,6 +28,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
+        skopeo copy docker://docker.io/ginuerzh/gost:2.12 docker://registry.cn-hangzhou.aliyuncs.com/gshub/gost:2.12
         skopeo copy docker://docker.io/gogost/gost:3.2.6 docker://registry.cn-hangzhou.aliyuncs.com/gshub/gost:3.2.6
         skopeo copy docker://docker.io/apache/hertzbeat:1.8.0 docker://registry.cn-hangzhou.aliyuncs.com/gshub/hertzbeat:1.8.0
         skopeo copy docker://docker.io/apache/hertzbeat-collector:1.8.0 docker://registry.cn-hangzhou.aliyuncs.com/gshub/hertzbeat-collector:1.8.0
