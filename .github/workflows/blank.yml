@@ -41,6 +41,7 @@ jobs:
         skopeo copy docker://docker.io/library/redis:8 docker://registry.cn-hangzhou.aliyuncs.com/gshub/redis:8        
         skopeo copy docker://docker.io/library/tomcat:8.5.100-jdk8-temurin-jammy docker://registry.cn-hangzhou.aliyuncs.com/gshub/tomcat:8.5.100-jdk8-temurin-jammy
         skopeo copy docker://docker.io/library/eclipse-temurin:8-jre-jammy docker://registry.cn-hangzhou.aliyuncs.com/gshub/eclipse-temurin:8-jre-jammy
+        skopeo copy docker://docker.io/library/eclipse-temurin:8-jdk-jammy docker://registry.cn-hangzhou.aliyuncs.com/gshub/eclipse-temurin:8-jdk-jammy
         skopeo copy docker://docker.io/library/nginx:1.28 docker://registry.cn-hangzhou.aliyuncs.com/gshub/nginx:1.28
         skopeo copy docker://docker.io/library/postgres:18 docker://registry.cn-hangzhou.aliyuncs.com/gshub/postgres:18
         skopeo copy docker://docker.io/cloudflare/cloudflared docker://registry.cn-hangzhou.aliyuncs.com/gshub/cloudflared
